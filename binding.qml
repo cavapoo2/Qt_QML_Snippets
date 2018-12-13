@@ -30,5 +30,15 @@ Window {
             height: 50
             color: myTextInput.text.length <= 10 ? "red" : "blue"
         }
+        Rectangle {
+            width: 100
+            height: width * 2
+            color:"blue"
+
+            focus: true
+            Keys.onSpacePressed: {
+                height = width * 3
+            }
+        }
     }
 }
